@@ -1,0 +1,55 @@
+
+
+div.menu
+{
+    margin: 0 auto;
+    padding: 5em;
+
+}
+
+div.menu ul li a
+{
+    
+    text-decoration: none;
+    font-size: 18pt;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+
+div.borderXwidth ul li a:before, div.borderXwidth ul li a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.8s;
+}
+
+div.borderXwidth ul li a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth ul li a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+
+.logo {
+	width: 20%;
+	height: 20%;
+}
