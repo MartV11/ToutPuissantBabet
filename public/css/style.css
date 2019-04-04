@@ -1,17 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Londrina+Shadow|Love+Ya+Like+A+Sister|Montserrat+Subrayada|Palanquin+Dark|Reem+Kufi|Rubik+Mono+One|Voltaire');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+/* font-family: 'Reem Kufi', sans-serif;
+font-family: 'Palanquin Dark', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Londrina Shadow', cursive;
+font-family: 'Voltaire', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif; */
+
+body {
+    background-color: orange;
+    
+}
+
+        /* MENU */
+
+.logo {
+    width: 200px;
+    margin-top: -70px;
+}
+
+nav .nav-wrapper {
+    padding: 80px;
+    background-color: #039be5;
+    z-index: 1;
+}
 
 
-div.menu
-{
-    margin: 0 auto;
-    padding: 6em;
-
+div.menu ul li a {
+    /*margin-right: 50px;*/
+    font-family: 'Reem Kufi', sans-serif;
+    margin-top: -25px;
 }
 
 div.menu ul li a
 {
     
     text-decoration: none;
-    font-size: 18pt;
+    font-size: 20pt;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -27,7 +54,7 @@ div.borderXwidth ul li a:before, div.borderXwidth ul li a:after
     height: 2px;
     content: '';
     background: #FFF;
-    transition: all 0.8s;
+    transition: all 0.6s;
 }
 
 div.borderXwidth ul li a:before
@@ -49,7 +76,249 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
 }
 
 
-.logo {
-	width: 20%;
-	height: 20%;
+
+
+        /* TITRE */
+
+/* .ml15 {
+  font-weight: 800;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 5em;
+  letter-spacing: 0.1em;
 }
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 2em;
+} */
+
+.unbreakable-contain
+{
+    /*position: absolute;
+    bottom: 10px;
+    left: 20px;*/
+    /*background-color: black;
+    border-radius: 4px;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;*/
+    display: inline-block;
+     padding: 130px;
+}
+
+
+.unbreakable
+{
+    font-family: 'Anton', sans-serif;
+    line-height: 1;
+
+    letter-spacing: -.07em;
+
+    color: #fff;
+}
+
+.ks
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    line-height: 1;
+
+    margin-top: -11px;
+    margin-left: -90px;
+
+    -webkit-transition: all .3s ease-in-out;
+            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
+    -webkit-transform: translateX(-1000%);
+        -ms-transform: translateX(-1000%);
+            transform: translateX(-1000%);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    color: #fc0;
+}
+
+.animate .ks
+{
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+}
+
+span
+{
+    font-family: 'Anton', Helvetica, sans-serif;
+    font-size: 50px;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+    color: #039be5;
+
+    filter: alpha(opacity=0);
+}
+
+.able
+{
+    -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+    letter-spacing: -.07em;
+}
+
+.break
+{
+    -webkit-transition: all .3s ease-in-out 2s;
+            transition: all .3s ease-in-out 2s;
+    letter-spacing: -.07em;
+}
+
+.un
+{
+    -webkit-transition: all .3s ease-in-out 1.7s;
+            transition: all .3s ease-in-out 1.7s;
+    letter-spacing: -.07em;
+}
+
+.animate .un
+{
+    font-size: 40px;
+
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+
+    opacity: 1;
+
+    filter: alpha(opacity=100);
+
+}
+
+.animate .break
+{
+    font-size: 60px;
+
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+
+    opacity: 1;
+
+    filter: alpha(opacity=100);
+}
+
+.animate .able
+{
+    font-size: 80px;
+
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+
+    opacity: 1;
+
+    filter: alpha(opacity=100);
+}
+
+.correction {
+    margin-top: 95px;
+    
+    background:
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(11, 53, 108, 0.6), 
+      rgba(11, 53, 108, 0.6)
+    ),
+    /* bottom, image */
+    url('../img/humberto-santos-394879-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+
+
+
+        /* CONTENU ACTU*/
+
+.news {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.info {
+    background:
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(31, 82, 127, 0.4), 
+      rgba(31, 82, 127, 0.4)
+    ),
+    /* bottom, image */
+    url('../img/humberto-santos-394879-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ajuster {
+    padding: 20px;
+}
+
+.effet {
+transition-duration: 0.8s;
+transition-timing-function: ease-in-out;
+}
+
+.effet:hover
+{
+transition: 0.8s;
+transform: rotate(3deg);
+
+
+}
+
+
+
+        /* TWEAK */
+
+.divider {
+    height: 2px;
+    background-color: black;
+}
+
+.marge {
+    margin-top: 250px;
+}
+
+
+        /* CLASSEMENT ET RESULTAT */
+
+.taille img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+        /* FOOTER */
+
+
+
+.page-footer {
+    background-color: #039be5;
+}
+
+
+
+
+
+
+
+
