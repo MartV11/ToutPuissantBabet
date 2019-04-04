@@ -20,18 +20,5 @@ Route::get('/actu', function () {
     return view('actu');
 });
 
-Route::get('/equipe', function () {
-    return view('equipe');
-});
-
-Route::get('/historique', function () {
-    return view('historique');
-});
-
-Route::get('/stat', function () {
-    return view('stat');
-});
-
-Route::get('/gallerie', function () {
-    return view('gallerie');
-});
+Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
