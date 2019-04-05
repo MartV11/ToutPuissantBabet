@@ -20,24 +20,24 @@
           
   <nav>
     <div class="nav-wrapper menu borderXwidth z-depth-2 col s12 m12 l12">
-      <a href="#" class="brand-logo"><img class="responsive-img logo" src="./img/logo1.png"></a>
+      <a href="main" class="brand-logo"><img class="responsive-img logo" src="./img/logo1.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">ACTUALITE</a></li>
-        <li><a href="badges.html">EQUIPE</a></li>
-        <li><a href="collapsible.html">HISTORIQUE</a></li>
-        <li><a href="collapsible.html">STATISTIQUES</a></li>
-        <li><a href="collapsible.html">GALLERIE</a></li>
+        <li><a href="actu">ACTUALITE</a></li>
+        <li><a href="equipe">EQUIPE</a></li>
+        <li><a href="historique">HISTORIQUE</a></li>
+        <li><a href="stat">STATISTIQUES</a></li>
+        <li><a href="gallerie">GALLERIE</a></li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Actualité</a></li>
-    <li><a href="badges.html">Equipe</a></li>
-    <li><a href="collapsible.html">Historique</a></li>
-    <li><a href="collapsible.html">Statistiques</a></li>
-    <li><a href="collapsible.html">Gallerie</a></li>
+    <li><a href="actu">Actualité</a></li>
+    <li><a href="equipe">Equipe</a></li>
+    <li><a href="historique">Historique</a></li>
+    <li><a href="stat">Statistiques</a></li>
+    <li><a href="gallerie">Gallerie</a></li>
   </ul>
 
 

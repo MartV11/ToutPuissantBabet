@@ -12,8 +12,8 @@
 */
 
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/main', function () {
+    return view('main');
 });
 
 Route::get('/actu', function () {
@@ -36,5 +36,6 @@ Route::get('/gallerie', function () {
     return view('gallerie');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
+Route::get('/equipe', 'PlayerController@index');

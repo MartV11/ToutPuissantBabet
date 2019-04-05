@@ -27,8 +27,6 @@ class CreateUsersTable extends Migration
             $table->string('codePostal');
             $table->string('telephone');
             $table->string('pays');
-            $table->string('dateInscription');
-            $table->string('login');
         });
     }
 
