@@ -20,9 +20,8 @@ Route::get('/actu', function () {
     return view('actu');
 });
 
-Route::get('/equipe', function () {
-    return view('equipe');
-});
+Route::get('/equipe', 'PlayerController@play');
+
 
 Route::get('/historique', function () {
     return view('historique');
@@ -38,4 +37,3 @@ Route::get('/gallerie', function () {
 
 Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
-Route::get('/equipe', 'PlayerController@index');
