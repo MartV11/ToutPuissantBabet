@@ -23,6 +23,7 @@ class Player extends Migration
             $table->string('poids');
             $table->string('pied');
             $table->string('poste');
+            $table->string('description');
         });
     }
 

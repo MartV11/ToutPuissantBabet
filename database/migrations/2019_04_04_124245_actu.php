@@ -17,7 +17,6 @@ class Actu extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('titre');
-            $table->string('date');
             $table->string('texte');
             $table->string('image');
         });
