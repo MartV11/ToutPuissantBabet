@@ -16,24 +16,21 @@ Route::get('/main', function () {
     return view('main');
 });
 
-Route::get('/actu', function () {
-    return view('actu');
-});
 
 Route::get('/equipe', 'PlayerController@play');
+
+Route::get('/actu', 'ActuController@actu');
+
+Route::get('/stat', 'StatController@stat');
 
 
 Route::get('/historique', function () {
     return view('historique');
 });
 
-Route::get('/stat', function () {
-    return view('stat');
-});
-
 Route::get('/gallerie', function () {
     return view('gallerie');
 });
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
