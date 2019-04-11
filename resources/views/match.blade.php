@@ -1,34 +1,29 @@
 @extends('layout')
 
-
-@section('content')
-
-
+@section ('content')
 <div class="container">
-<div class="col s12 m7">
-    <h2 class="header">Horizontal Card</h2>
-    <div class="card horizontal">
-      <div class="card-image">
-        <img src="https://lorempixel.com/100/190/nature/6">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-      
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-      </div>
-      <div class="card-image right-align">
-        <img src="https://lorempixel.com/100/190/nature/6">
-      </div>
+  <div class="row">
+    @foreach($match as $afficheInfo)
+
+    <div class="col s12 m6 l4 xl4">
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/classement.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p>Babet - {{ $afficheInfo->adversaire }} :  {{ $afficheInfo->scoreBabet}} - {{ $afficheInfo->scoreAdv }}</p>
+      <p>{{ $afficheInfo->date }}<p>
+
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>{{$afficheInfo->nom}}</p>
     </div>
   </div>
+</div>
+@endforeach
+
+</div>
 </div>
 @endsection
