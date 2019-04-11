@@ -16,12 +16,18 @@ Route::get('/main', function () {
     return view('main');
 });
 
+Route::get('/match', function () {
+    return view('match');
+});
+
 
 Route::get('/equipe', 'PlayerController@play');
 
 Route::get('/actu', 'ActuController@actu');
 
 Route::get('/stat', 'StatController@stat');
+
+Route::get('/match', 'MatchController@match');
 
 
 Route::get('/historique', function () {
