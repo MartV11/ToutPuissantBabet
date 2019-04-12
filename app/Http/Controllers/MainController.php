@@ -22,7 +22,8 @@ class MainController extends Controller
 
 
     				$mainActu = DB::table('actu')
-            ->orderBy('created_at', 'desc' ,'limit 4')
+            ->orderBy('created_at', 'desc')
+            ->limit(4)
             ->get();
 
     return view('main')->with('mainActu', $mainActu);
