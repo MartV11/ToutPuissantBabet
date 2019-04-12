@@ -25,7 +25,12 @@ class StatController extends Controller
             ->orderBy('nb_buts', 'desc')
             ->get();
 
-return view('stat')->with('goal',$goal);
+            
+
+            return view('stat')->with('goal',$goal);
+
+
+
 
   }
 }
