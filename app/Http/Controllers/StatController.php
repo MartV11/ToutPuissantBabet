@@ -25,9 +25,17 @@ class StatController extends Controller
             ->orderBy('nb_buts', 'desc')
             ->get();
 
-            
+            $selec = DB::table('selection')
+                    ->join('player','player.id', '=', 'selection.player_id')
+                    ->select(DB::raw('count(*) as nb_selec, player_id'))
+                    ->groupBy('player_id')
+                    ->get();
 
-            return view('stat')->with('goal',$goal);
+
+  //  SELECT player_id , COUNT(*) FROM `selection`GROUP BY player_id;
+
+
+            return view('stat')->with('goal',$goal)->with('selec', $selec);
 
 
 

@@ -13,13 +13,13 @@
       <img class="activator" src="img/classement.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
       <p>Babet - {{ $matchs[$i]->adversaire }} :  {{  $matchs[$i]->scoreBabet}} - {{  $matchs[$i]->scoreAdv }}</p>
       <p>{{  $matchs[$i]->date }}<p>
 
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Compo:<i class="material-icons right">close</i></span>
     <ul>
       <?php for ($j=0;$j<sizeof($compos[$i]);$j++){ ?>
         <li>{{ $compos[$i][$j][0]->nom}}</li>

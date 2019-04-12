@@ -12,12 +12,12 @@
 	</head>
 
     	<body>
-    		  
-              
+
+
         <header>
-         
+
          <!-- HEADER + NAVIGATION   -->
-          
+
   <nav>
     <div class="nav-wrapper menu borderXwidth z-depth-2 col s12 m12 l12">
       <a href="main" class="brand-logo"><img class="responsive-img logo" src="./img/logo1.png"></a>
@@ -26,8 +26,10 @@
         <li><a href="actu">ACTUALITE</a></li>
         <li><a href="equipe">EQUIPE</a></li>
         <li><a href="historique">HISTORIQUE</a></li>
-        <li><a href="stat">STATISTIQUES</a></li>
-        <li><a href="gallerie">GALERIE</a></li>
+        <li><a href="stat">TROPHEE SUZE</a></li>
+        <li><a href="match">MATCHS</a></li>
+				<li><a href="gallerie">GALERIE</a></li>
+
       </ul>
     </div>
   </nav>
@@ -57,14 +59,14 @@
 
 
     <div class="center correction z-depth-1 col s12">
-    <div class="unbreakable-contain">  
+    <div class="unbreakable-contain">
   <div class="unbreakable">
     <div class="test"><span class="un">TOUT</span><span class="break">PUISSANT</span><span class="able">BABET</span></div>
   </div>
   <div class="ks">Football Club</div>
 </div>
 </div>
-        
+
         </header>
 
         <div style="margin-bottom: 50px">
@@ -98,7 +100,7 @@
             </div>
           </div>
         </footer>
-              
+
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -106,8 +108,8 @@
   crossorigin="anonymous"></script>
     		<!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+
     <script src="./js/main.js"></script>
     	</body>
-    	
+
 	</html>

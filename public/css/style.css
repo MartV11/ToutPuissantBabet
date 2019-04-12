@@ -11,7 +11,7 @@ font-family: 'Montserrat Subrayada', sans-serif; */
 
 body {
     background-color: orange;
-    
+
 }
 
         /* MENU */
@@ -36,7 +36,7 @@ div.menu ul li a {
 
 div.menu ul li a
 {
-    
+
     text-decoration: none;
     font-size: 1.8vw;
     position: relative;
@@ -112,7 +112,7 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
 {
     font-family: 'Anton', sans-serif;
     line-height: 1;
-    
+
     letter-spacing: -.07em;
 
     color: #fff;
@@ -221,11 +221,11 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
 
 .correction {
     margin-top: 95px;
-    
+
     background:
-    /* top, transparent red, faked with gradient */ 
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(11, 53, 108, 0.6), 
+      rgba(11, 53, 108, 0.6),
       rgba(11, 53, 108, 0.6)
     ),
     /* bottom, image */
@@ -245,14 +245,14 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 30px;
     color: white;
-    
+
 }
 
 .info {
     background:
-    /* top, transparent red, faked with gradient */ 
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(31, 82, 127, 0.4), 
+      rgba(31, 82, 127, 0.4),
       rgba(31, 82, 127, 0.4)
     ),
     /* bottom, image */
@@ -326,13 +326,3 @@ transform: rotate(3deg);
     z-index: 1000;
 
 }
-
-
-
-
-
-
-
-
-
-

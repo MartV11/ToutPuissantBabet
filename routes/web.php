@@ -29,6 +29,9 @@ Route::get('/stat', 'StatController@stat');
 
 Route::get('/match', 'MatchController@match');
 
+Route::get('/formulaire', 'FormulaireController@form');
+
+
 
 Route::get('/historique', function () {
     return view('historique');

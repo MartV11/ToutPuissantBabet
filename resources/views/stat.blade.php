@@ -24,12 +24,18 @@
 
         <tbody>
         	@foreach($goal as $classement)
+					@foreach($selec as $selection)
+
           <tr>
             <td>{{ $classement->nom }} {{ $classement->prenom }}</td>
             <td>{{ $classement->nb_buts }}</td>
-            <td>$0.87</td>
+						@if($classement->nom)
+            <td>{{$selection->nb_selec}}</td>
+						@endif
           </tr>
           @endforeach
+					@endforeach
+
         </tbody>
       </table>
     </div>
