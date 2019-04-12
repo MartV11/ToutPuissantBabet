@@ -27,43 +27,20 @@
     </div>
 
   <div class="row content">
+    @foreach($mainActu as $afficheActu)
     <div class="col s12 m12 l4">
       <div class="card">
         <div class="card-image effet">
-          <img class="img-news" src="./img/arsenal.jpg">
-          <span class="card-title">Card Title</span>
+          <img class="img-news" src="{{ asset($afficheActu->image)}}">
+          <span class="card-title">{{ $afficheActu->titre }}</span>
+          <span>{{ $afficheActu->created_at }}</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>{{ $afficheActu->texte }}</p>
         </div>
       </div>
     </div>
-    <div class="col s12 m12 l4">
-      <div class="card">
-        <div class="card-image effet">
-          <img class="img-news" src="./img/arsenal.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m12 l4">
-      <div class="card">
-        <div class="card-image effet">
-          <img class="img-news" src="./img/arsenal.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    @endforeach
 </div>
 
 

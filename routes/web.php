@@ -12,14 +12,13 @@
 */
 
 
-Route::get('/main', function () {
-    return view('main');
-});
+
 
 Route::get('/match', function () {
     return view('match');
 });
 
+Route::get('/main', 'MainController@main');
 
 Route::get('/equipe', 'PlayerController@play');
 

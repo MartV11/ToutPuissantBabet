@@ -40,3 +40,8 @@ function doStuff() {
 window.onload = function() {
     doStuff();
 };
+
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+       
