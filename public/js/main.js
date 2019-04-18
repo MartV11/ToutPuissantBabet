@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+
+$(document).ready(function(){
     $('.slider').slider();
   });
 
@@ -41,7 +45,4 @@ window.onload = function() {
     doStuff();
 };
 
-$(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
        

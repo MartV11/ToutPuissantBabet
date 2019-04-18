@@ -16,17 +16,23 @@ class MainController extends Controller
 
     public function main(){
 
-      // $mainActu=Main::all();
-      // return view('main')->with('mainActu',$mainActu);
 
-
-
-    				$mainActu = DB::table('actu')
+    		$mainActu = DB::table('actu')
             ->orderBy('created_at', 'desc')
-            ->limit(4)
+            ->limit(3)
+            ->offset(1)
             ->get();
 
-    return view('main')->with('mainActu', $mainActu);
+
+
+            $grosseActu = DB::table('actu')
+            ->orderBy('created_at', 'desc')
+            ->limit(1)
+            ->get();
+
+    return view('main')
+				->with('mainActu', $mainActu)
+				->with('grosseActu', $grosseActu);
    
   }
 

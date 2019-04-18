@@ -9,21 +9,22 @@
 
   <div class="actu">
     <div class="row content one-actu">
+      @foreach($grosseActu as $principalActu)
       <div class="news center">
       <h1>NEWS</h1>
     </div>
       <div class="col s12 m12 l12 xl12">
         <div class="card">
         <div class="card-image effet">
-          <img class="img-news" src="./img/arsenal.jpg">
-          <span class="card-title">Card Title</span>
+          <img class="img-news" src="{{ asset($principalActu->image)}}">
+          <span class="card-title">{{ $principalActu->titre }}</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>{{ $principalActu->texte }}</p>
         </div>
       </div>
       </div>
+      @endforeach
     </div>
 
   <div class="row content">
@@ -47,7 +48,7 @@
 
   <!-- Classement et resultat download -->
       
-    <div class="info" style="margin-bottom: -50px;">
+    <div class="info">
       <!-- <div class="divider"></div> -->
       <div class="row content ajuster">
         <div class="news center">
@@ -72,7 +73,7 @@
         <div class="card-image taille">
           <img src="./img/resultat.jpg">
           <span class="card-title">Résultats</span>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">cloud_download</i></a>
+          <a target="_blank" href="./img/logo1.png" class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">cloud_download</i></a>
         </div>
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>

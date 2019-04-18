@@ -73,6 +73,17 @@
           @yield('content')
         </div>
 
+        <!-- FIXED ACTION BUTTON -->
+        <div class="fixed-action-btn">
+          <a href="#" class="btn-floating red btn-large"><i class="large material-icons">mode_edit</i></a>
+          <ul>
+            <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">insert_chart</i></a></li>
+            <li><a href="#" class="btn-floating blue btn-large"><i class="large material-icons">format_quote</i></a></li>
+            <li><a href="#" class="btn-floating green btn-large"><i class="large material-icons">publish</i></a></li>
+            <li><a href="#" class="btn-floating orange btn-large"><i class="large material-icons">attach_file</i></a></li>
+          </ul>
+        </div>
+
         <!-- FOOTER -->
 
   <footer class="page-footer">
