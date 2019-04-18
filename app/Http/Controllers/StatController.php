@@ -20,25 +20,51 @@ class StatController extends Controller
 
     $goal = DB::table('goal')
             ->join('player', 'player.id', '=', 'goal.player_id')
-            ->select(DB::raw('count(*) as nb_buts, player_id, nom, prenom'))
-            ->groupBy('player_id')
+            ->select(DB::raw('count(goal.id) as nb_buts, player.id, player.nom, player.prenom'))
+            ->groupBy('player.id')
             ->orderBy('nb_buts', 'desc')
             ->get();
 
-            $selec = DB::table('selection')
-                    ->join('player','player.id', '=', 'selection.player_id')
-                    ->select(DB::raw('count(*) as nb_selec, player_id'))
-                    ->groupBy('player_id')
-                    ->get();
+
+    $selec = DB::table('selection')
+            ->join('player','player.id', '=', 'selection.player_id')
+            ->select(DB::raw('count(*) as nb_selec, player_id'))
+            ->groupBy('player_id')
+            ->get();
 
 
   //  SELECT player_id , COUNT(*) FROM `selection`GROUP BY player_id;
 
+    foreach ($goal as $currentGoalLine) {
 
-            return view('stat')->with('goal',$goal)->with('selec', $selec);
+      $correspondingSelec = $this->findCorrespondingSelec($selec, $currentGoalLine->id);
 
+      if ($correspondingSelec != null) {
 
+        $currentGoalLine->nb_selec = $correspondingSelec->nb_selec;
+      }
+      else {
+        $currentGoalLine->nb_selec = 'NA';
+      }
+    }
 
+    return view('stat')->with('goal',$goal);
+  }
 
+  private function findCorrespondingSelec($selections, $idPlayer) {
+
+    $result = null;
+
+    foreach ($selections as $selection) {
+
+      if ($selection->player_id == $idPlayer) {
+
+        $result = $selection;
+
+        break;
+      }
+    }
+
+    return $result;
   }
 }

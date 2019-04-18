@@ -30,6 +30,9 @@ Route::get('/match', 'MatchController@match');
 
 Route::get('/formulaire', 'FormulaireController@form');
 
+Route::get('/compo', 'CompoController@comp');
+
+
 
 
 Route::get('/historique', function () {

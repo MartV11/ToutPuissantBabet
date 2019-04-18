@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="container center">
-	<h1>Trophée SUZE</h1>
+	<h1></h1>
 	<div>
 	<img class="suze" style="width: 280px; height: 200px;" src="./img/suze_logo.png">
 </div>
@@ -24,16 +24,13 @@
 
         <tbody>
         	@foreach($goal as $classement)
-					@foreach($selec as $selection)
 
           <tr>
             <td>{{ $classement->nom }} {{ $classement->prenom }}</td>
             <td>{{ $classement->nb_buts }}</td>
-						@if($classement->nom)
-            <td>{{$selection->nb_selec}}</td>
-						@endif
+            <td>{{ $classement->nb_selec }}</td>
           </tr>
-          @endforeach
+
 					@endforeach
 
         </tbody>
