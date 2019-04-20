@@ -10,14 +10,15 @@ font-family: 'Voltaire', sans-serif;
 font-family: 'Montserrat Subrayada', sans-serif; */
 
 body {
-    background-color: orange;
+    background-color: #e0e0e0;
 
 }
 
         /* MENU */
 
 .logo {
-    width: 200px;
+    width: 300px;
+    height: 200px;
     margin-top: -70px;
 }
 
@@ -135,7 +136,7 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
     letter-spacing: -1px;
     text-transform: uppercase;
 
-    color: #fc0;
+    color: #e8371a;
 }
 
 .animate .ks
@@ -245,8 +246,14 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 30px;
     color: white;
+    background-color: black;
 
 }
+
+.actu {
+    margin-top: 80px;
+}
+
 
 .info {
     background:
@@ -260,6 +267,7 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 50px;
 }
 
 .content {
@@ -291,8 +299,9 @@ transform: rotate(3deg);
         /* TWEAK */
 
 .divider {
-    height: 2px;
-    background-color: black;
+    height: 3px;
+    background-color: #e8371a;
+    border-radius: 5px;
 }
 
 .marge {
@@ -319,4 +328,80 @@ transform: rotate(3deg);
 
 
 
-        /*PAGE STAT*/
+        /*PAGE ACTU*/
+
+.resize {
+    width: 250px;
+    height: 300px;
+}
+
+    /*PAGE EQUIPE*/
+
+.prenom {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 12pt;
+}
+
+.nom {
+    font-family: 'Anton', sans-serif;
+    font-size: 16pt;
+}
+
+.poste {
+    padding: 10px;
+}
+
+.poste-info{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+
+.poste-titre {
+    font-family: 'Anton', sans-serif;
+    background-color: #0a5d86;
+    border-radius: 2px;
+    color: white;
+}
+
+.poste-reveal {
+    padding: 3px;
+}
+
+.poste-titre-reveal {
+    font-family: 'Anton', sans-serif;
+    background-color: #e8371a;
+    border-radius: 2px;
+    color: white;
+    font-size: 15pt;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.description {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.caractere {
+    font-family: 'Anton', sans-serif;
+}
+
+
+        /*PAGE STAT-BUTEURS*/
+
+.tableau {
+    background-color: #0a5d86;
+    font-family: 'Anton', sans-serif;
+}
+
+.text-tableau {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+

@@ -3,6 +3,12 @@
 
 @section('content')
 
+<div class="container">
+<div class="news center">
+      <h1>TROPHEE SUZE</h1>
+    </div>
+</div>
+
 <div class="container center">
 	<h1></h1>
 	<div>
@@ -12,13 +18,13 @@
 </div>
 
 <div class="container">
-<table class="striped blue z-depth-1">
+<table class="striped z-depth-1 tableau">
         <thead>
 
-          <tr>
-              <th>Les buteurs</th>
-              <th>Nombre de but</th>
-              <th>Nombre de match</th>
+          <tr class="text-tableau">
+              <th><i class="icon left"><img src="img/football-player-attempting-to-kick-ball.png"></i>Les buteurs</th>
+              <th><i class="icon left"><img src="img/football.png"></i>Nombre de but</th>
+              <th><i class="icon left"><img src="img/soccer-field.png"></i>Nombre de match</th>
           </tr>
         </thead>
 

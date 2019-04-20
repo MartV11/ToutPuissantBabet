@@ -16,8 +16,9 @@
       <div class="col s12 m12 l12 xl12">
         <div class="card">
         <div class="card-image effet">
+          <div class="divider"></div>
           <img class="img-news" src="{{ asset($principalActu->image)}}">
-          <span class="card-title">{{ $principalActu->titre }}</span>
+          <span class="card-title fond-title">{{ $principalActu->titre }}</span>
         </div>
         <div class="card-content">
           <p>{{ $principalActu->texte }}</p>
@@ -30,11 +31,14 @@
   <div class="row content">
     @foreach($mainActu as $afficheActu)
     <div class="col s12 m12 l4">
+
       <div class="card">
+
         <div class="card-image effet">
+          <div class="divider"></div>
           <img class="img-news" src="{{ asset($afficheActu->image)}}">
           <span class="card-title">{{ $afficheActu->titre }}</span>
-          <span>{{ $afficheActu->created_at }}</span>
+          <span class="grey-text"><em>{{ $afficheActu->created_at }}</em></span>
         </div>
         <div class="card-content">
           <p>{{ $afficheActu->texte }}</p>
@@ -57,6 +61,7 @@
         <div class="col s12 m12 l6 xl6">
       <div class="card">
         <div class="card-image taille">
+          <div class="divider"></div>
           <img src="./img/classement.jpg">
           <span class="card-title">Classement</span>
           <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">cloud_download</i></a>
@@ -71,6 +76,7 @@
     <div class="col s12 m12 l6 xl6">
       <div class="card">
         <div class="card-image taille">
+          <div class="divider"></div>
           <img src="./img/resultat.jpg">
           <span class="card-title">Résultats</span>
           <a target="_blank" href="./img/logo1.png" class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">cloud_download</i></a>

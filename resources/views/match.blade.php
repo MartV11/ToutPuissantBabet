@@ -1,6 +1,14 @@
 @extends('layout')
 
 @section ('content')
+
+
+<div class="container">
+<div class="news center">
+      <h1>MATCH</h1>
+    </div>
+</div>
+
 <div class="container">
   <div class="row">
     <?php for ($i=0;$i<sizeof($matchs);$i++){?>

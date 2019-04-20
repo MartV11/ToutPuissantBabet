@@ -2,7 +2,13 @@
 
 @section('content')
 
-<!-- <div class="container">
+<div class="container">
+<div class="news center">
+      <h1>EQUIPE</h1>
+    </div>
+</div>
+
+<div class="container">
   <div class="row">
     @foreach($goodPlay as $afficheInfo)
 
@@ -14,28 +20,30 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
-              <p>{{ $afficheInfo->prenom }}</p>
-              <p>{{ $afficheInfo->nom }}</p>
+              <p class="prenom">{{ $afficheInfo->prenom }}</p>
+              <p class="nom">{{ $afficheInfo->nom }}</p>
 
-              <p>Poste: {{ $afficheInfo->poste }}</p>
+              <p class="poste"><i class="icon left"><img src="img/football-field.png"></i><p class="poste-titre">POSTE</p><p class="poste-info">{{ $afficheInfo->poste }}</p></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-              <h5>Description:</h5>
-              <p>{{ $afficheInfo->description }}</p>
-              <p>Taille: {{ $afficheInfo->taille }}</p>
-              <p>Poid: {{ $afficheInfo->poids }}</p>
-              <p>Pied: {{ $afficheInfo->pied }}</p>
+
+              <p class="poste-reveal poste-titre-reveal"><i class="icon left"><img src="img/football-player-attempting-to-kick-ball.png"></i>DESCRIPTION</p>
+
+              <p class="description">{{ $afficheInfo->description }}</p>
+              <p class="caractere">Taille : <span class="grey-text">{{ $afficheInfo->taille }}</span></p>
+              <p class="caractere">Poids : <span class="grey-text">{{ $afficheInfo->poids }}</span></p>
+              <p class="caractere">Pied : <span class="grey-text">{{ $afficheInfo->pied }}</span></p>
             </div>
           </div>
     </div>
     @endforeach
 
   </div>
-</div> -->
+</div>
 
 
-<div class="container">
+<!-- <div class="container">
   
   <div class="row">
      @foreach($goodPlay as $afficheInfo)
@@ -57,7 +65,7 @@
   @endforeach
   </div>
   
-</div>
+</div> -->
 
 
 
