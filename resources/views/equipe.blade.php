@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container">
+<div class="container">
 <div class="news center">
       <h1>EQUIPE</h1>
     </div>

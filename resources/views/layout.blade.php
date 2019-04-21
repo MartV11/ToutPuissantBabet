@@ -7,8 +7,14 @@
     <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	 <!-- Compiled and minified CSS -->
+	 			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+				<link rel="stylesheet" href="/resources/demos/style.css">
+
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 	</head>
 
     	<body>
@@ -20,7 +26,7 @@
 
   <nav>
     <div class="nav-wrapper menu borderXwidth z-depth-2 col s12 m12 l12">
-      <a href="main" class="brand-logo"><img class="responsive-img logo" src="./img/logo1.png"></a>
+      <a href="main" class="brand-logo"><img class="responsive-img logo" src="./img/teaser_logo_05_vrai couleur_OK.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="actu">ACTUALITE</a></li>
@@ -117,6 +123,9 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     		<!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
