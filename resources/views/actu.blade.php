@@ -15,7 +15,7 @@
 		@foreach($goodActu as $afficheInfo)
 		<div class="col s4">
 			
-			<div class="card">
+			<div class="card hoverable">
         <div class="card-image">
           <img class="resize" src="{{ asset($afficheInfo->image)}}">
           <h5 class="card-title">{{ $afficheInfo->titre }}</h5>

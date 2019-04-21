@@ -27,9 +27,9 @@
               <p class="poste"><i class="icon left"><img src="img/football-field.png"></i><p class="poste-titre">POSTE</p><p class="poste-info">{{ $afficheInfo->poste }}</p></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+              <span class="card-title grey-text text-darken-4">
 
-              <p class="poste-reveal poste-titre-reveal"><i class="icon left"><img src="img/football-player-attempting-to-kick-ball.png"></i>DESCRIPTION</p>
+              <p class="poste-reveal poste-titre-reveal"><i class="icon left"><img src="img/football-player-attempting-to-kick-ball.png"></i>DESCRIPTION<i class="material-icons right">close</i></p></span>
 
               <p class="description">{{ $afficheInfo->description }}</p>
               <p class="caractere">Taille : <span class="grey-text">{{ $afficheInfo->taille }}</span></p>

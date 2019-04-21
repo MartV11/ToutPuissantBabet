@@ -244,12 +244,15 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
 
 .news {
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 30px;
     color: white;
     background-color: #0a5d86;
     border-radius: 3px;
     width: 100%;
 
+}
+
+.news > h1 {
+  font-size: 5vw;
 }
 
 .actu {
@@ -565,4 +568,84 @@ section{
     font-family: 'Reem Kufi', sans-serif;
 }
 
+        /*PAGE MATCH*/
 
+.rencontre {
+  font-family: 'Anton', sans-serif;
+  font-size: 14pt;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.score {
+  font-family: 'Anton', sans-serif;
+  font-size: 18pt;
+  color: black;
+  background-color: #0a5d86;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.date-rencontre {
+  font-family: 'Anton', sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.ajuste-icon {
+  margin-left: 15px;
+}
+
+.ajuste-icon-left {
+  margin-right: 15px;
+}
+
+.list-player {
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+}
+
+.logo-reveal img {
+  width: 150px;
+  height: 120px;
+}
+
+
+    /*PAGE HISTORIQUE*/
+
+h1.story-title {
+  color: #e8371a;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 78px;
+  letter-spacing: -4px;
+  margin-bottom: 72px;
+}
+
+h1.story-title:after {
+  background: #e8371a;
+  content: '';
+  display: block;
+  height: 12px;
+  margin: 43px 0;
+  width: 80px;
+}
+
+p.story-text {
+  color: black;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 36px;
+  max-width: 500px;
+}
+
+a.story-link{
+  color: #cc3914; 
+}
+
+a.story-link:hover {
+  color: #50413c;
+}
