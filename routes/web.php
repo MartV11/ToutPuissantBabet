@@ -13,11 +13,6 @@
 
 
 
-
-Route::get('/match', function () {
-    return view('match');
-});
-
 Route::get('/main', 'MainController@main');
 
 Route::get('/equipe', 'PlayerController@play');
@@ -32,16 +27,10 @@ Route::get('/formulaire', 'FormulaireController@form');
 
 Route::get('/compo', 'CompoController@comp');
 
+Route::get('/gallerie', 'GallerieController@gallerie');
 
+Route::get('/historique', 'HistoriqueController@histo');
 
-
-Route::get('/historique', function () {
-    return view('historique');
-});
-
-Route::get('/gallerie', function () {
-    return view('gallerie');
-});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
