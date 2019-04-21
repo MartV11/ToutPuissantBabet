@@ -16,6 +16,11 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
   });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+  });
+
 /*anime.timeline({loop: true})
   .add({
     targets: '.ml15 .word',

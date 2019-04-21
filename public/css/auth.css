@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+html {
+    background-color: #e8371a;
+}
+
+
 .logo {
-    width: 100px;
-    height: 110px;
+    width: 200px;
+    height: 150px;
 }
 
 .perso {
-	background-color: #39b6ff;
+	background-color: #0a5d86;
 }
 
 
@@ -20,4 +27,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 5vw;
 }

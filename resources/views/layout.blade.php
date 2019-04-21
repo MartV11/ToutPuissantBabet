@@ -75,18 +75,16 @@
 
         </header>
 
-        <div style="margin-bottom: 50px">
+        <div>
           @yield('content')
         </div>
 
         <!-- FIXED ACTION BUTTON -->
         <div class="fixed-action-btn">
-          <a href="#" class="btn-floating red btn-large"><i class="large material-icons">mode_edit</i></a>
+          <a href="login" class="btn-floating red btn-large tooltipped" data-position="left" data-tooltip="I am a tooltip"><i class="large material-icons">link_off</i></a>
           <ul>
-            <li><a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">insert_chart</i></a></li>
-            <li><a href="#" class="btn-floating blue btn-large"><i class="large material-icons">format_quote</i></a></li>
-            <li><a href="#" class="btn-floating green btn-large"><i class="large material-icons">publish</i></a></li>
-            <li><a href="#" class="btn-floating orange btn-large"><i class="large material-icons">attach_file</i></a></li>
+            <li><a href="main" class="btn-floating blue btn-large"><i class="large material-icons">home</i></a></li>
+            <li><a href="formulaire" class="btn-floating orange btn-large"><i class="large material-icons">list_alt</i></a></li>
           </ul>
         </div>
 
