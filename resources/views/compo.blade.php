@@ -50,9 +50,9 @@
 <body>
     <content>
         <h1><span class="rouge">L</span><span class="bleu">O</span><span class="rouge">T</span><span class="bleu">O</span></h1>
-        <h2>Loto Compo</h2>
+        <h2 class="gardien">Loto Compo</h2>
         <section id="sectionTirage"></section>
-        <h2>Gardien de BUT</h2>
+        <h2 class="gardien">Gardien de BUT</h2>
         <section id="sectionChance"></section>
     </content>
 
