@@ -18,9 +18,9 @@
         <div class="card-image effet">
           <div class="divider"></div>
           <img class="img-news" src="{{ asset($principalActu->image)}}">
-          <span class="card-title fond-title">{{ $principalActu->titre }}</span>
+          <span class="card-title first-title">{{ $principalActu->titre }}</span>
         </div>
-        <div class="card-content">
+        <div class="card-content first-actu">
           <p>{{ $principalActu->texte }}</p>
         </div>
       </div>
@@ -37,9 +37,9 @@
         <div class="card-image effet">
           <div class="divider"></div>
           <img class="img-news" src="{{ asset($afficheActu->image)}}">
-          <span class="card-title">{{ $afficheActu->titre }}</span>
+          <span class="card-title little-title">{{ $afficheActu->titre }}</span>
         </div>
-        <div class="card-content">
+        <div class="card-content little-actu">
           <p>{{ $afficheActu->texte }}</p>
           <span class="grey-text"><em>{{ $afficheActu->created_at }}</em></span>
         </div>
@@ -63,10 +63,10 @@
         <div class="card-image taille">
           <div class="divider"></div>
           <img src="./img/classement.jpg">
-          <span class="card-title">Classement</span>
+          <span class="card-title little-title">Classement</span>
           <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">cloud_download</i></a>
         </div>
-        <div class="card-content">
+        <div class="card-content little-actu">
           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
         </div>
       </div>
@@ -78,10 +78,10 @@
         <div class="card-image taille">
           <div class="divider"></div>
           <img src="./img/resultat.jpg">
-          <span class="card-title">Résultats</span>
+          <span class="card-title little-title">Résultats</span>
           <a target="_blank" href="./img/logo1.png" class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">cloud_download</i></a>
         </div>
-        <div class="card-content">
+        <div class="card-content little-actu">
           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
         </div>
       </div>

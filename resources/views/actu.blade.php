@@ -17,11 +17,12 @@
 			
 			<div class="card hoverable">
         <div class="card-image">
+          <div class="divider"></div>
           <img class="resize" src="{{ asset($afficheInfo->image)}}">
-          <h5 class="card-title">{{ $afficheInfo->titre }}</h5>
+          <h5 class="card-title little-title">{{ $afficheInfo->titre }}</h5>
           <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
         </div>
-        <div class="card-content">
+        <div class="card-content little-actu">
           <p>{{ $afficheInfo->texte }}</p>
         </div>
       </div>

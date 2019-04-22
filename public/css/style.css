@@ -242,6 +242,28 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
 
         /* CONTENU ACTU*/
 
+.card-title.first-title {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: 28pt;
+  text-transform: uppercase;
+}
+
+.first-actu {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 12.5pt;
+}
+
+.card-title.little-title {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+.little-actu {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 11.5pt;
+}       
+
 .news {
     font-family: 'Montserrat Subrayada', sans-serif;
     color: white;
