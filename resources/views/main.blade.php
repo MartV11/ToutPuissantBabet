@@ -14,12 +14,12 @@
       <h1>NEWS</h1>
     </div>
       <div class="col s12 m12 l12 xl12">
-        <div class="card">
+        <a href="article"><div class="card">
         <div class="card-image effet">
           <div class="divider"></div>
           <img class="img-news" src="{{ asset($principalActu->image)}}">
           <span class="card-title first-title">{{ $principalActu->titre }}</span>
-        </div>
+        </div></a>
         <div class="card-content first-actu">
           <p>{{ $principalActu->texte }}</p>
         </div>

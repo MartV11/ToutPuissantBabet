@@ -31,6 +31,8 @@ Route::get('/gallerie', 'GallerieController@gallerie');
 
 Route::get('/historique', 'HistoriqueController@histo');
 
+Route::get('/article', 'ArticleController@article');
+
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

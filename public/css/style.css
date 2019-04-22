@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Londrina+Shadow|Love+Ya+Like+A+Sister|Montserrat+Subrayada|Palanquin+Dark|Reem+Kufi|Rubik+Mono+One|Voltaire');
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 /* font-family: 'Reem Kufi', sans-serif;
 font-family: 'Palanquin Dark', sans-serif;
 font-family: 'Rubik Mono One', sans-serif;
@@ -711,4 +712,40 @@ div#masonry:hover img:hover { opacity: 1; }
   }
 }
 
- 
+
+    /*PAGE EXEMPLE D'ARTICLE*/ 
+
+h1.article-title {
+  color: #cc141c;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 60px;
+  line-height: 54px;
+  margin-bottom: 72px;
+}
+
+h1.article-title:before {
+  font-family: 'Reem Kufi', sans-serif;
+  background: #cc141c;
+  content: '';
+  display: block;
+  height: 12px;
+  margin-bottom: 36px;
+  width: 72px;
+}
+
+p.article-text {
+  color: #574432;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 36px;
+  margin-left: 25%;
+}
+
+a.article-link {
+  color: #ec7309; font-style: italic;
+}
+
+a.article-link:hover {
+  color: #cc141c;
+}
