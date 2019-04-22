@@ -560,6 +560,7 @@ section{
 .tableau {
     background-color: #0a5d86;
     font-family: 'Anton', sans-serif;
+    margin-bottom: 50px;
 }
 
 .text-tableau {
@@ -658,6 +659,7 @@ a.story-link:hover {
   width: 60%;
   margin: 0 auto;
   background: #131212;
+  margin-bottom: 50px;
 }
 
 

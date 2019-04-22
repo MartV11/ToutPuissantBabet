@@ -81,10 +81,11 @@
 
         <!-- FIXED ACTION BUTTON -->
         <div class="fixed-action-btn">
-          <a href="login" class="btn-floating red btn-large tooltipped" data-position="left" data-tooltip="I am a tooltip"><i class="large material-icons">link_off</i></a>
+          <a href="#" class="btn-floating black btn-large tooltipped" data-position="left" data-tooltip="I am a tooltip"><i class="large material-icons">arrow_upward</i></a>
           <ul>
             <li><a href="main" class="btn-floating blue btn-large"><i class="large material-icons">home</i></a></li>
-            <li><a href="formulaire" class="btn-floating orange btn-large"><i class="large material-icons">list_alt</i></a></li>
+            <li><a href="formulaire" class="btn-floating orange btn-large"><i class="large material-icons">edit</i></a></li>
+            <li><a href="login" class="btn-floating red btn-large"><i class="large material-icons">link_off</i></a></li>
           </ul>
         </div>
 

@@ -2,6 +2,12 @@
 
 @section('content')
 
+<div class="container">
+<div class="news center">
+      <h1>FORMULAIRE</h1>
+    </div>
+</div>
+
 
 <div class='container  bigForm'>
   <div class="row col s12 m6 l6 xl4">

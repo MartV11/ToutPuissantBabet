@@ -38,10 +38,10 @@
           <div class="divider"></div>
           <img class="img-news" src="{{ asset($afficheActu->image)}}">
           <span class="card-title">{{ $afficheActu->titre }}</span>
-          <span class="grey-text"><em>{{ $afficheActu->created_at }}</em></span>
         </div>
         <div class="card-content">
           <p>{{ $afficheActu->texte }}</p>
+          <span class="grey-text"><em>{{ $afficheActu->created_at }}</em></span>
         </div>
       </div>
     </div>
