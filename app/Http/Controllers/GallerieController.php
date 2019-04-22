@@ -17,8 +17,10 @@ class GallerieController extends Controller
     public function gallerie(){
 
       // $images='img/*.{jpg,jpeg,gif,png}';
+
+    	$gallery=Gallerie::all();
       
-      return view('gallerie');
+      return view('gallerie')->with('gallery', $gallery);
      
 
   }

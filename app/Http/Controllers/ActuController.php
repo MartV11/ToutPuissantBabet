@@ -17,9 +17,9 @@ class ActuController extends Controller
     public function actu(){
 
       $goodActu=Actu::all();
-      // return $goodPlay;
+
       return view('actu')->with('goodActu',$goodActu);
-      //DB::$table(player)->select* etc....
+      
 
   }
 }

@@ -19,9 +19,8 @@ public function __construct()
   public function play(){
 
       $goodPlay=Player::all();
-      // return $goodPlay;
       return view('equipe')->with('goodPlay',$goodPlay);
-      //DB::$table(player)->select* etc....
+      //eloquent ici
 
   }
 }

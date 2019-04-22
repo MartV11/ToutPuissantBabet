@@ -16,32 +16,36 @@ class MatchController extends Controller
 
       public function match(){
 
-        //$goodMatch=Match::all();
-        //return view('match')->with('goodMatch',$goodMatch);
-        // for /parcourir la liste des matchs, et a chaque match chercher et ajouter sa compo
+        //selectionne toutes les lignes de la table match et les mets dans 'matchs'
         $matchs=DB::table('match')->get();
+    //initialise un tableau vide 'compo'
+      $compos=[];
 
-          $compos=[];
+  //pour chaque match qui existe dans '$matchs' on va exécuter le code ci dessous
+  foreach ($matchs as $match) {
 
-          foreach ($matchs as $match) {
+      //on récupère l'id du match en cours
+    $id=$match->id;
 
-            $id=$match->id;
+    //on sélectionne tous les joueurs (de la table selection) qui correspondent à l'id du match
+    $joueurs=DB::table('selection')->where('match_id', $id)->get();
 
-            $joueurs=DB::table('selection')->where('match_id', $id)->get();
+    //initialise un tableau vide 'players'
+    $players=[];
 
-            $players=[];
+    //pour chaque joueur qui existe dans '$joueurs'
+    foreach ($joueurs as $joueur) {
+        //on recupère les infos de la table 'player' qui correspondent à l'id du joueur
+      $playername=DB::table('player')->where('id',$joueur->player_id)->get();
+      //on met dans le tableau $players, le résultat de la requete --> le tableau contiendra donc les infos de tous les joueurs présents pour un match donné 
+      array_push($players,$playername);
+    }
+    //on met dans le tableau $compo le tableau $players --> le tableau contiendra donc des tableaux contenant les infos de tous les joueurs pour chaque match.
+    array_push($compos,$players);
+  }
 
-            foreach ($joueurs as $joueur) {
-
-              $playername=DB::table('player')->where('id',$joueur->player_id)->get();
-              array_push($players,$playername);
-            }
-
-            array_push($compos,$players);
-          }
-
-          //   return $compos;
-          return view('match')->with('matchs', $matchs)->with('compos', $compos);
+   //on retourne la liste des matchs et les compos associées
+  return view('match')->with('matchs', $matchs)->with('compos', $compos);
 
 //requete compo qui marche !!!!!!
 ////SELECT DISTINCT selection.player_id , player.nom FROM  `selection`INNER JOIN player ON selection.player_id = player.id WHERE selection.match_id = 2;///
