@@ -263,7 +263,7 @@ div.borderXwidth ul li a:hover:before, div.borderXwidth ul li a:hover:after
 .little-actu {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 11.5pt;
-}       
+}
 
 .news {
     font-family: 'Montserrat Subrayada', sans-serif;
@@ -355,16 +355,17 @@ transform: rotate(3deg);
 }
 
         /*FORMULAIRE MATCH*/
-.bigForm{
-  display: flex;
-  background-color: gray;
-  color: white;
-  margin-top: 20px;
-}
+        .bigForm{
+          display: flex;
+          background-color: #1a3156;
+          color: white;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
 
-.bigForm span {
-  color:white;
-}
+        .bigForm span {
+          color:white;
+        }
 
 
         /*PAGE DRAG*/
@@ -667,7 +668,7 @@ p.story-text {
 }
 
 a.story-link{
-  color: #cc3914; 
+  color: #cc3914;
 }
 
 a.story-link:hover {
@@ -686,34 +687,34 @@ a.story-link:hover {
 }
 
 
-div#masonry { 
-  display: flex; 
-  flex-direction: column; 
+div#masonry {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   height: 100vw;
   max-height: 800px;
-  font-size: 0;  
+  font-size: 0;
 }
-div#masonry img {  
+div#masonry img {
   width: 33.3%;
   transition: .8s opacity;
-} 
+}
 
 div#masonry:hover img { opacity: 0.3; }
-div#masonry:hover img:hover { opacity: 1; } 
+div#masonry:hover img:hover { opacity: 1; }
 
 /* fallback for earlier versions of Firefox */
 
 @supports not (flex-wrap: wrap) {
   div#masonry { display: block; }
-  div#masonry img {  
+  div#masonry img {
   display: inline-block;
   vertical-align: top;
   }
 }
 
 
-    /*PAGE EXEMPLE D'ARTICLE*/ 
+    /*PAGE EXEMPLE D'ARTICLE*/
 
 h1.article-title {
   color: #cc141c;

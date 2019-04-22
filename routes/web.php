@@ -33,6 +33,11 @@ Route::get('/historique', 'HistoriqueController@histo');
 
 Route::get('/article', 'ArticleController@article');
 
+Route::get('/actuResumeMatch', 'ActuResumeMatchController@resume');
+
+Route::get('/createurs', 'CreateursController@createur');
+
+Route::get('/nouveauxMembres', 'NouveauxMembresController@newMemb');
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

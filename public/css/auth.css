@@ -13,13 +13,16 @@ html {
 .perso {
 	background-color: #0a5d86;
 }
-
+footer{
+  background-color: #0a5d86;
+  height: 160px;
+}
 
 .py-4 {
 	background:
-    /* top, transparent red, faked with gradient */ 
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(11, 53, 108, 0.6), 
+      rgba(11, 53, 108, 0.6),
       rgba(11, 53, 108, 0.6)
     ),
     /* bottom, image */

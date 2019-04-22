@@ -91,32 +91,31 @@
 
         <!-- FOOTER -->
 
-  <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Rentre les donnés: </h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Score et Buteurs</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Actu/resumés</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Nouveaux membres</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">voir les créateurs du site</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-
+				<footer class="page-footer">
+	          <div class="container">
+	            <div class="row">
+	              <div class="col l6 s12">
+	                <h5 class="white-text">Espace gestionnaire:</h5>
+	                <p class="grey-text text-lighten-4">Chaque membre peu mettre à jour le site en peuplant la base de donnée avec les derniers resutats, dernieres actues ou nouveaux memmbres.</p>
+	              </div>
+	              <div class="col l4 offset-l2 s12">
+	                <h5 class="white-text">Rentre les donnés: </h5>
+	                <ul>
+	                  <li><a class="grey-text text-lighten-3" href="formulaire">Score et Buteurs</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="actuResumeMatch">Actu/resumés</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="nouveauxMembres">Nouveaux membres</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="createurs">voir les créateurs du site</a></li>
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="footer-copyright">
+	            <div class="container">
+	            © 2019 Copyright NaSoMa@corp
+	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+	            </div>
+	          </div>
+	        </footer>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
