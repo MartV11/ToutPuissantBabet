@@ -95,11 +95,11 @@
 	          <div class="container">
 	            <div class="row">
 	              <div class="col l6 s12">
-	                <h5 class="white-text">Espace gestionnaire:</h5>
-	                <p class="grey-text text-lighten-4">Chaque membre peu mettre à jour le site en peuplant la base de donnée avec les derniers resutats, dernieres actues ou nouveaux memmbres.</p>
+	                <h5 class="white-text">ESPACE GESTIONNAIRE</h5>
+	                <p class="grey-text text-lighten-4"><em>Chaque membre peu mettre à jour le site en peuplant la base de donnée avec les derniers resutats, dernieres actues ou nouveaux membres.</em></p>
 	              </div>
 	              <div class="col l4 offset-l2 s12">
-	                <h5 class="white-text">Rentre les donnés: </h5>
+	                <h5 class="white-text">INSERTION DONNEES</h5>
 	                <ul>
 	                  <li><a class="grey-text text-lighten-3" href="formulaire">Score et Buteurs</a></li>
 	                  <li><a class="grey-text text-lighten-3" href="actuResumeMatch">Actu/resumés</a></li>
@@ -112,7 +112,7 @@
 	          <div class="footer-copyright">
 	            <div class="container">
 	            © 2019 Copyright NaSoMa@corp
-	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+	            <a class="grey-text text-lighten-4 right" href="#!">Twitter</a>
 	            </div>
 	          </div>
 	        </footer>
